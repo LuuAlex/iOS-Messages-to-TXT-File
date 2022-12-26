@@ -55,6 +55,7 @@ curD.execute("""CREATE TABLE temp3 AS
     FROM temp2
     INNER JOIN chat
         ON temp2.chat_id = chat.ROWID
+    ORDER BY date
 ;""")
 
 
@@ -68,4 +69,7 @@ conB.commit()
 curD.execute("DROP TABLE temp1")
 curD.execute("DROP TABLE temp2")
 curD.execute("DROP TABLE temp3")
+
+conD.close()
+conB.close()
 
