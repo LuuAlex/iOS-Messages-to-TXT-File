@@ -15,7 +15,7 @@ def convert_datetime(sec):
 
 
 # CONNECT TO iOS BACKUP FILE
-conD = sqlite3.connect("BACKUP/3d/3d0d7e5fb2ce288813306e4d4636395e047a3d28")
+conD = sqlite3.connect("DATA_TO_BACKUP/3d/3d0d7e5fb2ce288813306e4d4636395e047a3d28")
 curD = conD.cursor()
 try:
     resD = curD.execute("SELECT ROWID FROM message")
@@ -67,7 +67,7 @@ except:
     sys.exit(1)
 
 
-# CONNECT/MAKE BACKUP TABLE
+# CONNECT/MAKE BACKUPMESSAGES TABLE
 conB = sqlite3.connect("backupMessages.db")
 curB = conB.cursor()
 try:
@@ -88,7 +88,7 @@ except:
     print(" --- Previous Table Found! --- ")
 
 
-# ADD TEMP3 TABLE TO BACKUP TABLE
+# ADD TEMPX3 TABLE TO BACKUPMESSAGES TABLE
 curD.execute("SELECT * FROM tempX3")
 data = curD.fetchall()
 
@@ -107,4 +107,4 @@ print(" --- SUCCESSFULLY BACKED UP MESSAGES! --- ")
 print()
 print()
 
-input("Press any key to exit...")
+input("Press enter to exit...")
