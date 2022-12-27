@@ -8,9 +8,10 @@ print(" --- Starting Script --- ")
 
 # Convert seconds since "2001-1-1 00:00:00" to "YYYY-MM-DD HH:MM:SS" Format
 def convert_datetime(sec):
+    sec = sec / 1000000000
     sec += 978307200
     date = datetime.fromtimestamp(sec)
-    return date.strftime("%Y-%m-%d")
+    return date.strftime("%Y-%m-%d %H:%M:%S")
 
 
 # CONNECT TO iOS BACKUP FILE
