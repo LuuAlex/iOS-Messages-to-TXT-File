@@ -26,6 +26,3 @@ for row in cur:
 
 print(" --- SUCCESSFULLY CREATED AND FORMATTED TXT FILES! --- ")
 print()
-print()
-
-input("Press enter to exit...")

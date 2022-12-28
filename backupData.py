@@ -2,7 +2,7 @@ import sys
 import sqlite3
 from datetime import datetime
 
-print()
+
 print(" --- Starting Script --- ")
 
 
@@ -105,6 +105,3 @@ conB.close()
 
 print(" --- SUCCESSFULLY BACKED UP MESSAGES! --- ")
 print()
-print()
-
-input("Press enter to exit...")
