@@ -68,7 +68,7 @@ except:
 
 
 # CONNECT/MAKE BACKUPMESSAGES TABLE
-conB = sqlite3.connect("backupMessages.db")
+conB = sqlite3.connect("MESSAGE_STORAGE/backupMessages.db")
 curB = conB.cursor()
 try:
     curB.execute("""CREATE TABLE messages (

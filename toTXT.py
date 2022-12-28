@@ -3,8 +3,9 @@ import sqlite3
 
 
 try:
-    con = sqlite3.connect("backupMessages.db")
+    con = sqlite3.connect("MESSAGE_STORAGE/backupMessages.db")
     cur = con.cursor()
+    cur.execute("SELECT * FROM messages")
     print(" --- Connected to backupMessages.db --- ")
 except:
     print(" !!! Failed to Connect to backupMessages.db !!! ")
@@ -15,7 +16,7 @@ cur2 = con.cursor()
 cur.execute("SELECT DISTINCT chat_id FROM messages")
 for row in cur:
     cur2.execute(f"""SELECT * FROM messages WHERE chat_id = {row[0]}""")
-    txt = open(str(row[0]) + ".txt", "w")
+    txt = open("MESSAGE_STORAGE/" + str(row[0]) + ".txt", "w")
     for row2 in cur2:
         if int(row2[5]) == 1:
             txt.write(f"ME ({row2[7]}): {row2[8]}" + "\n\n")
