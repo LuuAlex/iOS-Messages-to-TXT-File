@@ -2,7 +2,7 @@
 iOS Messages to TXT File is a tool to convert any iOS message backup file to a 
 .txt file. 
 
-When backing up, data from the iOS backup folder (named BACKUP) 
+When backing up, data from the iOS backup folder
 are joined to an database file (backupMessages.db) that the 
 program creates, updates and stores for you. 
 This database contains all the message history. 
@@ -13,12 +13,12 @@ automatically add missing messages to the stored database.
 ## Warnings (Read Carefully)
 * **DO NOT** *delete* OR *modify* OR *move* the backup folder in any way. This can corrupt your iOS backup file, rendering you unable to restore the backup
 * This program can potentially modify the backup file. **BE SURE** to ***MAKE A COPY*** of the backup file by using *copy/paste*. **DO NOT** *move* the backup file.
+* There are **NO** guarantees on this program's ability to back up text messages. Apple may change the structure of backup files anytime, which means this program might not always work.
 
 ## How to Use:
 1. Download this repo as a zip file and unzip on your computer.
 2. Find the backup folder for your iOS device and ***copy/paste*** the contents of the backup folder in the unzipped folder's ***DATA_TO_BACKUP*** directory.
-   * **On Mac**: Finder -> Go to Folder... -> ~/Library/Application Support/MobileSync/Backup
-   * **On Windows**:
+   * **Instructions for Finding Backup File**: https://support.apple.com/en-us/HT204215
    * The file name of the backup folder is something similar to: XXXXXXXX-XXXXXXXXXXXXXXXX
    * The inside of ***DATA_TO_BACKUP*** should contain many different folders labeled: "00", "0a", "0b", ... , "01", "1a" ...
 4. Run ***backupData.py***. Ensure no errors appear.
