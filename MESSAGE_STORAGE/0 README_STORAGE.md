@@ -1,0 +1,1 @@
+This folder (MESSAGE_STORAGE) contains the database (backupMessages.db) and text (.txt) files from the backup. Please do not rename any files or move the contents of any file. If you want to make changes, please make a copy first.
