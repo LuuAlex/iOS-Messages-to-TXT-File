@@ -7,7 +7,8 @@ are joined to an database file (backupMessages.db) that the
 program creates, updates and stores for you. 
 This database contains all the message history. 
 When running the program again, from a new backup file, the program will 
-automatically add missing messages to the stored database.
+automatically add missing messages to the stored database. After creating the database, 
+the program will automatically create .txt files that represent the chat history.
 
 
 ## Warnings (Read Carefully)
