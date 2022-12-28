@@ -20,7 +20,7 @@ automatically add missing messages to the stored database.
    * **On Mac**: Finder -> Go to Folder... -> ~/Library/Application Support/MobileSync/Backup
    * **On Windows**:
    * The file name of the backup folder is something similar to: XXXXXXXX-XXXXXXXXXXXXXXXX
-   * The inside of ***DATA_TO_BACKUP*** should contain many different folders labeled: "00", "01", "1a" ...
+   * The inside of ***DATA_TO_BACKUP*** should contain many different folders labeled: "00", "0a", "0b", ... , "01", "1a" ...
 4. Run ***backupData.py***. Ensure no errors appear.
    * The messages are now stored in ***backupMessages.db***, located in the ***MESSAGE_STORAGE*** directory.
 5. When you make a new backup of your phone, repeat step 2-4 and the new messages will be added to ***backupMessages.db***
