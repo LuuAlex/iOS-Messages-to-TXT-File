@@ -1,6 +1,6 @@
 # iOS-Messages-to-TXT-File
 iOS Messages to TXT File is a tool to convert any iOS message backup file to a 
-.txt file. 
+.txt file. Currently works on iOS 16.
 
 When backing up, data from the iOS backup folder
 are joined to an database file (backupMessages.db) that the 
