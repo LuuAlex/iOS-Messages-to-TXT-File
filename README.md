@@ -47,3 +47,6 @@ the program will automatically create .txt files that represent the chat history
    * *dateF*: formatted date to YYYY-MM-DD HH:MM:SS
    * *text*: content of text message
    * PRIMARY KEY: composite primary key using (message_id, chat_id, handle_id, phone_number)
+
+## Demo:
+![](https://github.com/LuuAlex/LuuAlex.github.io/blob/main/public/images/iOS-messages-to-TXT-file-demo.gif)
